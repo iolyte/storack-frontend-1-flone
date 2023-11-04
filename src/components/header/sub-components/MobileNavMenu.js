@@ -7,7 +7,7 @@ const MobileNavMenu = () => {
   return (
     <nav className="offcanvas-navigation" id="offcanvas-navigation">
       <ul>
-        <li className="menu-item-has-children">
+        {/* <li className="menu-item-has-children">
           <Link to={process.env.PUBLIC_URL + "/"}>{t("home")}</Link>
           <ul className="sub-menu">
             <li className="menu-item-has-children">
@@ -222,9 +222,9 @@ const MobileNavMenu = () => {
               </ul>
             </li>
           </ul>
-        </li>
+        </li> */}
 
-        <li className="menu-item-has-children">
+        {/* <li className="menu-item-has-children">
           <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
             {t("shop")}
           </Link>
@@ -336,13 +336,18 @@ const MobileNavMenu = () => {
               </ul>
             </li>
           </ul>
-        </li>
+        </li> */}
         <li>
-          <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
-            {t("collection")}
+          <Link to={process.env.PUBLIC_URL + "/"}>
+            {t("home")}
           </Link>
         </li>
-        <li className="menu-item-has-children">
+        <li>
+          <Link to={process.env.PUBLIC_URL + "/shop"}>
+            {t("shop")}
+          </Link>
+        </li>
+        {/* <li className="menu-item-has-children">
           <Link to={process.env.PUBLIC_URL + "/"}>{t("pages")}</Link>
           <ul className="sub-menu">
             <li>
@@ -391,8 +396,8 @@ const MobileNavMenu = () => {
               </Link>
             </li>
           </ul>
-        </li>
-        <li className="menu-item-has-children">
+        </li> */}
+        {/* <li className="menu-item-has-children">
           <Link to={process.env.PUBLIC_URL + "/blog-standard"}>
             {t("blog")}
           </Link>
@@ -418,6 +423,11 @@ const MobileNavMenu = () => {
               </Link>
             </li>
           </ul>
+        </li> */}
+        <li>
+          <Link to={process.env.PUBLIC_URL + "/about"}>
+            {t("about_us")}
+          </Link>
         </li>
         <li>
           <Link to={process.env.PUBLIC_URL + "/contact"}>
