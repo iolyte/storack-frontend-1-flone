@@ -14,7 +14,12 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
     >
       <nav>
         <ul>
-          <li>
+        <li>
+            <Link to={process.env.PUBLIC_URL + "/"}>
+              {t("Home")}
+            </Link>
+          </li>
+          {/* <li>
             <Link to={process.env.PUBLIC_URL + "/"}>
               {t("home")}
               {sidebarMenu ? (
@@ -252,8 +257,8 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
                 </ul>
               </li>
             </ul>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
               {" "}
               {t("shop")}
@@ -394,13 +399,13 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> */}
           <li>
-            <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
-              {t("collection")}
+            <Link to={process.env.PUBLIC_URL + "/shop"}>
+              {t("Shop")}
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to={process.env.PUBLIC_URL + "/"}>
               {t("pages")}
               {sidebarMenu ? (
@@ -458,9 +463,14 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
                 </Link>
               </li>
             </ul>
+          </li> */}
+          <li>
+          <Link to={process.env.PUBLIC_URL + "/about"}>
+              {t("about_us")}
+            </Link>
           </li>
           <li>
-            <Link to={process.env.PUBLIC_URL + "/blog-standard"}>
+            {/* <Link to={process.env.PUBLIC_URL + "/blog-standard"}>
               {t("blog")}
               {sidebarMenu ? (
                 <span>
@@ -493,7 +503,7 @@ const NavMenu = ({ menuWhiteClass, sidebarMenu }) => {
               </li>
             </ul>
           </li>
-          <li>
+          <li> */}
             <Link to={process.env.PUBLIC_URL + "/contact"}>
               {t("contact_us")}
             </Link>

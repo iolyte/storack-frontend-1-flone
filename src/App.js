@@ -124,7 +124,7 @@ const App = () => {
                 element={<HomeFashion/>}
               />
 
-              {/* Homepages */}
+              {/* Homepages
               <Route
                 path={process.env.PUBLIC_URL + "/home-fashion"}
                 element={<HomeFashion/>}
@@ -276,14 +276,14 @@ const App = () => {
               <Route
                 path={process.env.PUBLIC_URL + "/home-valentines-day"}
                 element={<HomeValentinesDay/>}
-              />
+              /> */}
 
               {/* Shop pages */}
               <Route
-                path={process.env.PUBLIC_URL + "/shop-grid-standard"}
+                path={process.env.PUBLIC_URL + "/shop"}
                 element={<ShopGridStandard/>}
               />
-              <Route
+              {/* <Route
                 path={process.env.PUBLIC_URL + "/shop-grid-filter"}
                 element={<ShopGridFilter/>}
               />
@@ -314,14 +314,14 @@ const App = () => {
               <Route
                 path={process.env.PUBLIC_URL + "/shop-list-two-column"}
                 element={<ShopListTwoColumn/>}
-              />
+              /> */}
 
               {/* Shop product pages */}
               <Route
                 path={process.env.PUBLIC_URL + "/product/:id"}
-                element={<Product />}
+                element={<ProductTabLeft />}
               />
-              <Route
+              {/* <Route
                 path={process.env.PUBLIC_URL + "/product-tab-left/:id"}
                 element={<ProductTabLeft/>}
               />
@@ -340,10 +340,10 @@ const App = () => {
               <Route
                 path={process.env.PUBLIC_URL + "/product-fixed-image/:id"}
                 element={<ProductFixedImage/>}
-              /> 
+              />  */}
 
               {/* Blog pages */}
-              <Route
+              {/* <Route
                 path={process.env.PUBLIC_URL + "/blog-standard"}
                 element={<BlogStandard/>}
               />
@@ -358,7 +358,7 @@ const App = () => {
               <Route
                 path={process.env.PUBLIC_URL + "/blog-details-standard"}
                 element={<BlogDetailsStandard/>}
-              /> 
+              />  */}
 
               {/* Other pages */}
               <Route
